@@ -1,0 +1,54 @@
+.footer {
+    background-color: rgba($color:$Dark-moderate-cyan, $alpha: .6);
+
+    &__container {
+        padding        : 70px 0 50px 0;
+        display        : flex;
+        justify-content: center;
+        flex-direction : column;
+        align-items    : center;
+    }
+
+    &__menu {
+        display: flex;
+        padding: 50px 0 90px 0;
+
+        &-item {
+            &:nth-child(2) {
+                margin: 0 60px;
+            }
+        }
+
+        &-link {
+            text-decoration: none;
+            color          : $Dark-moderate-cyan;
+            font-weight    : bold;
+            transition     : all .1s linear;
+
+            &:hover {
+                color     : $White;
+                transition: all .1s linear;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+
+        &-item {
+            &:nth-child(1) {
+                margin: 0;
+            }
+
+            margin-left: 20px;
+        }
+
+        &-link {
+            svg {
+                &:hover path {
+                    fill: $White;
+                }
+            }
+        }
+    }
+}
